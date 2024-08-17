@@ -38,9 +38,9 @@ func PetsciiToAscii(str []byte) (string, error) {
 			b -= 96
 		}
 
-		if b >= 'A' && b <= 'Z' {
+		if b >= 65 && b <= 90 {
 			b += 32
-		} else if b >= 'a' && b <= 'z' {
+		} else if b >= 97 && b <= 122 {
 			b -= 32
 		}
 
